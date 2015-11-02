@@ -42,5 +42,8 @@
     "gruntplugin",
     "grunt",
     "plugin"
-  ]
+  ],
+  "dependencies": {
+    "smooshjs": "^0.1.0"
+  }
 }

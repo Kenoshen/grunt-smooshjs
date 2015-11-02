@@ -30,21 +30,15 @@ module.exports = function(grunt) {
 
     // Configuration to be run (and then tested).
     smooshjs: {
-      default_options: {
-        options: {
-        },
-        files: {
-          'tmp/default_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+      first: {
+          in: "file1.js",
+          out: "file1.out.js",
+          cjs: true,
+          amd: true
       },
-      custom_options: {
-        options: {
-          separator: ': ',
-          punctuation: ' !!!'
-        },
-        files: {
-          'tmp/custom_options': ['test/fixtures/testing', 'test/fixtures/123']
-        }
+      second: {
+          in: "file2.js",
+          amd: true
       }
     },
 
