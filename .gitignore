@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+tmp
+.idea
+**.iml
+build
+**DS_Store
+**node_modules
+**.log
+test/output/*
