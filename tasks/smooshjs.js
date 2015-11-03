@@ -27,12 +27,19 @@ module.exports = function(grunt) {
         var cmd = {
             in: (this.data.in || ""),
             out: (this.data.out || ""),
-            cjs: (this.data.cjs ? "-cjs " : ""),
-            amd: (this.data.amd ? "-amd " : "")
+            cjs: (this.data.cjs ? "-cjs" : ""),
+            amd: (this.data.amd ? "-amd" : ""),
+            silent: (this.data.silent ? "-silent" : ""),
+            test: (this.data.test ? "-test" : "")
         };
 
         // run the smoosh command and capture the output
-        var output = smooshjs(cmd.cjs + " " + cmd.amd + " " + cmd.in + " " + cmd.out);
+        var output = smooshjs(cmd.cjs + " " +
+            cmd.amd + " " +
+            cmd.silent + " " +
+            cmd.test + " " +
+            cmd.in + " " +
+            cmd.out);
 
         // check the output code, anything other than 0 indicates an error
         if (output.code !== 0){

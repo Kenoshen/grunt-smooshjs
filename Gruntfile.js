@@ -30,7 +30,8 @@ module.exports = function (grunt) {
                 in: "file1.js",
                 out: "file1.out.js",
                 cjs: true,
-                amd: true
+                amd: true,
+                silent: true
             },
             second: {
                 in: "file2.js",
