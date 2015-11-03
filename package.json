@@ -1,7 +1,7 @@
 {
   "name": "grunt-smooshjs",
   "description": "Grunt plugin for the smooshjs project",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/Kenoshen/grunt-smooshjs",
   "author": {
     "name": "Michael Wingfield",
@@ -44,6 +44,7 @@
     "plugin"
   ],
   "dependencies": {
-    "smooshjs": "^0.1.0"
+    "shelljs": "^0.5.3",
+    "smooshjs": "^0.1.1"
   }
 }
