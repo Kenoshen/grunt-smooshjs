@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         };
 
         // run the smoosh command and capture the output
-        var output = smooshjs(cmd.cjs, cmd.amd, cmd.in, cmd.out);
+        var output = smooshjs(cmd.cjs + " " + cmd.amd + " " + cmd.in + " " + cmd.out);
 
         // check the output code, anything other than 0 indicates an error
         if (output.code !== 0){
